@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esscentia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+      background-image: radial-gradient(circle at top left, #1a1a1a 10%, transparent 11%),
+                        radial-gradient(circle at bottom right, #1a1a1a 10%, transparent 11%);
+      background-size: 100px 100px;
+      background-repeat: repeat;
+    }
+    .logo-img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .subtitle {
+      margin: 10px 0 30px;
+      font-size: 1.2rem;
+    }
+    .icon-row {
+      margin: 20px 0;
+    }
+    .icon-row img {
+      width: 40px;
+      margin: 0 10px;
+      filter: brightness(0) invert(1);
+    }
+    .button {
+      display: block;
+      margin: 15px auto;
+      width: 80%;
+      max-width: 400px;
+      padding: 15px;
+      font-size: 1.2rem;
+      background-color: #222;
+      color: white;
+      border: 1px solid #444;
+      border-radius: 12px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    iframe {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 800px;
+      height: 600px;
+      border: 2px solid #555;
+      border-radius: 12px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <img class="logo-img" src="logo.jpeg" alt="Logo Esscentia">
+
+  <div class="subtitle">Presentaciones de 3ml, 5ml y 10ml</div>
+
+  <div class="icon-row">
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
+  </div>
+
+  <button class="button" onclick="mostrarCatalogo()">Catálogo</button>
+  <a class="button" href="https://wa.me/527731096952" target="_blank">Whatsapp</a>
+  <a class="button" href="https://www.tiktok.com/@esscentia" target="_blank">TikTok</a>
+
+  <iframe id="catalogo" src="https://www.canva.com/design/DAGrHC_tyOI/IzVjoZULEzgb2gMSrnplcg/view?embed" allowfullscreen></iframe>
+
+  <script>
+    function mostrarCatalogo() {
+      const iframe = document.getElementById('catalogo');
+      iframe.style.display = 'block';
+      iframe.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
